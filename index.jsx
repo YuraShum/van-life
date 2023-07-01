@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
-import About from './components/About/About.jsx';
+import About from './components/pages/About/About.jsx';
 import Home from './components/pages/Home/Home.jsx';
 
 
