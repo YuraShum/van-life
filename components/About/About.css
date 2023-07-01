@@ -1,0 +1,25 @@
+.about-container>img{
+    max-width: 100%;
+}
+.about-page-content{
+    padding: 0 20px;
+}
+
+.about-page-cta{
+    padding: 30px;
+    margin: 20px;
+    background-color: #ffc57a;
+    border-radius: 5px;
+}
+
+.about-page-cta h2{
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+.about-page-cta a{
+    background-color: black;
+    color: aliceblue;
+    padding: 8px 15px;
+    border-radius: 8px;
+}

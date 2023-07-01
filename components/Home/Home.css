@@ -1,0 +1,24 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url("./assets/images/home-hero.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 30px 10px;
+    color: aliceblue;
+}
+.home-container>a{
+    text-decoration: none;
+    background-color: rgb(255, 140, 0);
+    margin: 0px 10px;
+    text-align: center;
+    color: aliceblue;
+    padding: 8px 10px;
+    border-radius: 5px;
+    
+}
+.home-container>a:hover{
+    background-color: rgba(255, 140, 0, 0.893);
+}
