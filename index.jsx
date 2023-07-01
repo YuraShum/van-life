@@ -3,7 +3,11 @@ import ReactDOM from 'react-dom/client';
 
 import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import About from './components/About/About';
-import Home from './components/Home/Home';
+import Home from './components/pages/Home/Home';
+
+
+import "./server";
+
 function App() {
   return (
     <BrowserRouter >
