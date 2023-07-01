@@ -7,6 +7,7 @@ import Home from './components/Home/Home.jsx';
 
 
 import "./server.js";
+import Vans from './components/Vans/Vans.jsx';
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
           path="/about"
           element={<About />}
         />
+        <Route 
+          path='/vans'
+          element= {<Vans/>}></Route>
       </Routes>
 
     </BrowserRouter>
