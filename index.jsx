@@ -6,7 +6,7 @@ import About from './components/About/About';
 import Home from './components/pages/Home/Home';
 
 
-import "./server";
+import "./server.js";
 
 function App() {
   return (
