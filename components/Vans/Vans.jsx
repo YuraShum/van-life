@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import './Vans.css'
 
 export default function Vans(){
 
@@ -16,16 +17,18 @@ export default function Vans(){
                 <img src={van.imageUrl} alt="" />
                 <div className="van-information">
                     <h3>{van.name}</h3>
-                    <p>{van.price}<span>/day</span></p>
-                    <i>{van.type}</i>
+                    <p>${van.price}<span>/day</span></p>
+                    <i className={`${van.type} van-type`}>{van.type}</i>
                 </div>
             </div>
         )
     })
     return(
-        <div>
-            <h2>Explorte our van options</h2>
-            {vanElements}
+        <div className="container grid-container">
+            <h2 >Explorte our van options</h2>
+            <div className="grid-vans">
+                {vanElements}
+            </div>
         </div>
     )
 }

@@ -1,0 +1,54 @@
+.grid-vans{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+    
+}
+.grid-container{
+    padding: 50px 20px 20px;
+}
+.grid-container h2{
+    
+    margin: 0px;
+    margin-bottom: 20px;
+}
+.van-content{
+    width: 160px;
+
+}
+
+.van-content img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.van-information{
+
+}
+.van-type{
+    padding: 5px 20px;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+.simple{
+    background-color: rgb(255, 110, 53);
+}
+.simple:hover{
+    background-color: rgb(252, 85, 20);
+}
+
+.rugged{
+    background-color: rgb(33, 100, 63);
+}
+.rugged:hover{
+    background-color: rgb(13, 77, 42);
+}
+.luxury{
+    background-color: rgba(0, 0, 0, 0.826);
+}
+.luxury:hover{
+    background-color: rgba(0, 0, 0, 1);
+}
