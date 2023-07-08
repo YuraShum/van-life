@@ -26,6 +26,9 @@
 .van-information{
 
 }
+.van-content a{
+    text-decoration: none;
+}
 .van-type{
     padding: 5px 20px;
     color: aliceblue;

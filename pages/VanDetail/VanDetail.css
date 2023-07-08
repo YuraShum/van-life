@@ -1,0 +1,43 @@
+.van-detail-container{
+    padding: 20px;
+}
+.van-detail-container img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+.van-detail{
+    display: flex;
+    flex-direction: column;
+}
+.van-detail>p>span{
+    font-size: 20px;
+    font-weight: 700;
+}
+.van-detail i{
+    width: max-content;
+}
+.van-description{
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.van-detail>button{
+    border: none;
+    background-color: rgb(255, 140, 0);
+
+}
+.van-detail>button{
+    transition: all ease-in-out 0.3s;
+    text-decoration: none;
+    background-color: rgb(255, 140, 0, 0.893);
+    text-align: center;
+    color: aliceblue;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.van-detail>button:hover{
+    background-color: rgba(255, 140, 0);
+}

@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import About from './components/About/About.jsx';
-import Home from './components/Home/Home.jsx';
+import About from './pages/About/About.jsx';
+import Home from './pages/Home/Home.jsx';
 
 
 import "./server.js";
-import Vans from './components/Vans/Vans.jsx';
+import Vans from './pages/Vans/Vans.jsx';
+import VanDetail from './pages/VanDetail/VanDetail.jsx';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
         <Route 
           path='/vans'
           element= {<Vans/>}></Route>
+          <Route 
+          path='/vans/:id'
+          element ={<VanDetail/>}></Route>
       </Routes>
 
     </BrowserRouter>
