@@ -1,0 +1,7 @@
+.nav-host{
+    display: flex;
+    
+}
+.nav-host a{
+    padding: 20px;
+}
