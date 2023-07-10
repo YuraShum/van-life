@@ -6,8 +6,32 @@ html, body {
 
     margin: 0;
     padding: 0;
+    background-color: #FFF7ED;
+    font-family: "Inter", sans-serif;
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 
+main {
+    margin-bottom: 84px;
+}
+footer {
+    background-color: #161616;
+    color: #AAAAAA;
+    height: 74px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    font-weight: 500;
+}
 .navigation>a{
     text-transform: uppercase;
     font-size: 24px;
@@ -37,10 +61,36 @@ a:hover{
     padding: 20px 20px;
     justify-content: space-between;
 }
-.container{
-    width: 400px;
-    margin: 0 auto;
-    background-color: blanchedalmond;
+
+a.active-link{
+    font-weight: 700;
+    color: black;
 }
+.personal-vans{
+    margin: 0px 20px;
+}
+.personal-van {
+    border-radius: 2px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.87);
+    margin-bottom: 20px;
+    
+}
+
+.personal-van img{
+    height: 80px;
+    border-radius: 5px;
+}
+.information h2{
+    margin: 0px ;
+}
+
+.personal-vans a{
+    text-decoration: none;
+}
+
 
 

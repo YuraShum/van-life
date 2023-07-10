@@ -13,19 +13,14 @@
     margin: 0px;
     margin-bottom: 20px;
 }
-.van-content{
-    width: 160px;
 
-}
 
 .van-content img{
     width: 100%;
     border-radius: 5px;
 }
 
-.van-information{
 
-}
 .van-content a{
     text-decoration: none;
 }
