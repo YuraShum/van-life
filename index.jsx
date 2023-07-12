@@ -19,6 +19,7 @@ import HostVanDetail from './pages/Host/HostVans/HostVansDetail.jsx';
 import HostVanDetailPricing from './pages/Host/HostVanDetailPricing/HostVanDetailPricing.jsx';
 import HostVanDetailPhotos from './pages/Host/HostVanDetailPhotos/HostVanDetailPhotos.jsx';
 import Details from './pages/Host/HostVans/Details.jsx';
+import NotFound from './pages/NotFound.jsx';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       
       <Routes>
         <Route path='/' element={<Layout/>}>
+          
         <Route index  element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path='vans' element= {<Vans/>}></Route>
@@ -43,7 +45,7 @@ function App() {
             </Route>
             
           </Route>
-          
+          <Route path='*' element={<NotFound/>}></Route>
         </Route>
       </Routes>
 
@@ -55,3 +57,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <App />
 
 );
+
+// Виписати всі хуки()

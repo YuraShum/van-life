@@ -133,5 +133,65 @@ a.active-link{
 .host-vans-information-detail span{
     font-weight: 700;
 }
+.van-type-filters-button{
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-decoration: none;
+}
+.van-type-filters-button a{
+    text-decoration: none;
+}
+.van-type-filter {
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    
+}
+.van-type-filter-types{
+    background-color: bisque;
+}
+
+.van-type-filter:nth-child(1):hover {
+    color: white;
+    background-color: #E17654;
+}
+
+.van-type-filter:nth-child(2):hover {
+    background-color: #161616;
+    color: white;
+}
+
+.van-type-filter:nth-child(3):hover{
+    color: white;
+    background-color: #115E59;
+}
+.van-type-filter:last-child:hover{
+    text-decoration: underline;
+}
+
+
+.vans-not-found{
+    margin: 100px 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.vans-not-found h2{
+    margin: 0px;
+    margin-bottom: 30px;
+}
+.vans-not-found a{
+    background-color: #161616;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
 
 
