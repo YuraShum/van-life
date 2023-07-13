@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import './Vans.css'
 import { Link, useSearchParams } from "react-router-dom";
+import { getVans } from "../../api";
 
 
 export default function Vans(){
@@ -12,9 +13,11 @@ export default function Vans(){
     console.log(typeFilter)
 
     useEffect(() => {
-        fetch("/api/vans")
-        .then(result => result.json())
-        .then(data => setVans(data.vans))
+        async function loadVans() {
+            const data = await getVans();
+            setVans(data)
+        }
+        loadVans()
     }, [])
 
     const filterVans = typeFilter ? vans.filter((van) => van.type.toLowerCase() === typeFilter)  : vans ;
