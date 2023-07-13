@@ -1,27 +1,24 @@
 import { useEffect, useState } from "react"
 import './Vans.css'
-import { Link, useSearchParams } from "react-router-dom";
+import { Link, useLoaderData, useSearchParams } from "react-router-dom";
 import { getVans } from "../../api";
+
+export function loader(){
+    return  getVans()
+}
 
 
 export default function Vans(){
 
-    const [vans, setVans] = useState([]);
-    const [searchParams, setSearchParams] = useSearchParams()
+    const vans = useLoaderData();
+    console.log(vans)
 
+    const [searchParams, setSearchParams] = useSearchParams()
+    const [error, setError] = useState(null)
     const typeFilter = searchParams.get("type")
     console.log(typeFilter)
 
-    useEffect(() => {
-        async function loadVans() {
-            const data = await getVans();
-            setVans(data)
-        }
-        loadVans()
-    }, [])
-
     const filterVans = typeFilter ? vans.filter((van) => van.type.toLowerCase() === typeFilter)  : vans ;
-
     const vanElements = filterVans.map(van => {
         return(
             <div className="van-content" key={van.id}>
@@ -48,6 +45,10 @@ export default function Vans(){
           return prevParams
         })
       }
+
+    if(error){
+        return <h1>There was an error: {error.message}</h1>
+    }
     return(
         <div className="container grid-container">
             <h2 >Explorte our van options</h2>
