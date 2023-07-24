@@ -52,6 +52,7 @@ a:hover{
 .link-section{
 
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
@@ -206,5 +207,249 @@ a.active-link{
 }
 
 
+.login-container{
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;  
+}
+
+.login-form > input:focus {
+    outline: none;
+}
+
+.login-form > input:first-of-type{
+    border-radius: 6px 6px 0px 0px;
+}
+.login-form > input:last-of-type{
+    border-radius: 0px 0px 6px 6px;
+    border-top: none;
+}
+.login-form > input{
+    height: 40px;
+    border: solid 1px rgba(209, 213, 219);
+    text-indent: 10px;
+    font-family: "Inter", sans-serif;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    font-weight: 400;
+}
+.login-form > button {
+    margin-top: 20px;
+    color: white;
+    background-color: #FF8C38;
+    height: 55px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+.login-form > button:hover{
+    background-color: #ff7b1d;
+}
+
+.exit-button{
+    background-color: transparent;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
 
 
+.conteiner{
+    margin: 20px;
+}
+.graph{
+    width: 100%;
+    margin-bottom: 40px;
+    max-width: 500px;
+
+}
+
+.conteiner > p{
+    color: #4d4d4d;
+}
+
+.conteiner > p > span {
+    color: #161616;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.conteiner > h2{
+    font-size: 34px;
+    font-weight: 900;
+}
+.info-header > p{
+    color: #4d4d4d;
+}
+
+.info-header> p > span {
+    color: #161616;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.transactions{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.transaction{
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    padding: 0px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.transaction h3{
+    font-size: 34px;
+    color: rgb(48, 48, 48);
+}
+
+.transaction p{
+    color: rgb(100, 100, 100);
+    font-size: 18px;
+}
+
+.host-reviews{
+    margin: 0px 20px;
+}
+
+
+.host-reviews > p{
+    color: #4d4d4d;
+}
+
+.host-reviews> p > span {
+    color: #161616;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.host-reviews .review-star {
+    color: #ff8c38;
+    margin-right: 5px;
+}
+.review{
+    margin-top: 20px;
+}
+.review .text{
+    color: rgb(41, 41, 41);
+}
+.info-review{
+    display: flex;
+    gap: 20px;
+}
+.info-review .name{
+    font-weight: 700;
+}
+.info-review .date{
+    color: gray;
+}
+
+
+.host-dashboard-earnings{
+    background-color: #ffead0;
+    padding: 37px 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.host-dashboard-earnings > .info > h1 {
+    font-size: 36px;
+    color: #161616;
+    margin: 0;
+}
+.host-dashboard-earnings > .info > p {
+    color: #4d4d4d;
+}
+.host-dashboard-earnings > .info > p > span {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #161616;
+    font-size: 18px;
+}
+.host-dashboard-earnings > .info > h2 {
+    margin: 0;
+    font-size: 38px;
+    color: #161616;
+    font-weight: 900;
+}
+.host-dashboard-reviews{
+    background-color:#ffddb2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 26px;
+}
+.host-dashboard-reviews > h2 {
+    margin: 0;
+}
+.host-dashboard-reviews .star {
+    color: #ff8c38;
+    margin-left: 15px;
+    font-size: 25px;
+}
+.host-dashboard-reviews p {
+    margin-left: 5px;
+    font-size: 20px;
+    color: #4d4d4d;
+    margin-right: auto;
+}
+.host-dashboard-reviews p > span {
+    font-weight: bold;
+    color: #161616;
+}
+
+.host-dashboard-vans{
+    margin: 0px 20px;
+}
+.host-dashboard-vans .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    
+}
+
+.host-van-single{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+    
+}
+.host-van-block{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.host-van-block img{
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+}
+.host-van-info h3{
+    margin: 0px;
+    margin-top: 10px;
+}
+.host-van-info p{
+    margin-top: 10px;
+}

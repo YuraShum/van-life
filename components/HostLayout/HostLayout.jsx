@@ -1,15 +1,22 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Navigate, Outlet } from "react-router-dom";
 
 import "./HostLayout.css"
 
+
+
 export default function HostLayout(){
+    
+    const isLoggedIn  = localStorage.getItem('loggedin');
+    console.log(isLoggedIn + " log in")
     const linkActiveStyles = {
         fontWeight: "bold",
         textDecoration: "underline",
         color: "#161616",
     }
     return(
-        <div className="container">
+        <>
+            {!isLoggedIn ? <Navigate to ={`/login?message=You must log in first.&redirectTo=${localStorage.getItem("pathname")}`}></Navigate> : 
+            <div className="container">
             <nav className=" nav-host">
                 <NavLink to='.'
                 end
@@ -26,6 +33,7 @@ export default function HostLayout(){
                 >Reviews</NavLink>
             </nav>
             <Outlet/>
-        </div>
+        </div>}
+        </>
     )
 }
