@@ -259,6 +259,7 @@ a.active-link{
     border-radius: 50%;
     height: 30px;
     width: 30px;
+    color: black;
     cursor: pointer;
 }
 
