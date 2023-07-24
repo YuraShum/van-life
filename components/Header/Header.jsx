@@ -24,7 +24,8 @@ export default function Header(){
             <NavLink to='login'
             className={({isActive})=> isActive ? 'active-link': null}
             ><RxAvatar style={{width: "30", height: '30'}}></RxAvatar></NavLink>
-            <button className="exit-button" onClick={fakeLogOut}><GiExitDoor/></button>
+            {/* <button className="exit-button" onClick={fakeLogOut}><GiExitDoor/></button> */}
+            <GiExitDoor  className="exit-button" onClick={fakeLogOut} style={{width: "30", height: '30'}}></GiExitDoor>
           </div>
         </nav>
       </header>
