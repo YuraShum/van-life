@@ -256,11 +256,12 @@ a.active-link{
 
 .exit-button{
     background-color: transparent;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 100%;
     color: black;
     cursor: pointer;
-    text-align: center;
+    border: none;
+    
 }
 
 
